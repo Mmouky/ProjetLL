@@ -12,3 +12,11 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+
+Route::get('/play', 'PlayController@index');
+
+Route::get('/leaderboard', 'LeaderBoardController@index');
+
+Route::get('/ideas', 'IdeasController@index');
+
+Route::get('/register', 'RegisterController@index');
