@@ -13,9 +13,15 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/play', 'PlayController@index');
+Route::get('/play', [
+    'as' => 'play',
+    'uses' => 'PlayController@index'
+]);
 
-Route::get('/leaderboard', 'LeaderBoardController@index');
+Route::get('/leaderboard', [
+    'as' => 'leaderboard',
+    'uses' => 'LeaderBoardController@index'
+]);
 
 Route::get('/ideas', 'IdeasController@index');
 

@@ -1,9 +1,9 @@
 @extends('template')
 
 @section('title')
-
+    Play
 @endsection
 
 @section('body')
-    Play
+    {!! form($form) !!}
 @endsection
